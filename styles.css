@@ -1,0 +1,244 @@
+/* styles.css */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    background-color: #f7f7f7;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+    min-height: 100%;  /* Ensure the body takes up at least full screen height */
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed; /* Fixed position for header */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 40px;
+}
+
+header.hidden {
+    transform: translateY(-100%);
+}
+
+.header-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.subheading {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 120px; /* Adjust padding to account for fixed header */
+}
+
+.card {
+    background: linear-gradient(135deg, #6c7bff, #1e2f92);
+    border-radius: 15px;
+    width: 300px;
+    min-height: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-10px) rotate(3deg);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+    background: #1e2f92;
+    color: white;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    flex-shrink: 0;
+}
+
+.card-body {
+    padding: 20px;
+    background-color: #ffffff;
+    flex-grow: 1;
+    border-top: 2px solid #1e2f92;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    overflow-y: auto;
+    position: relative;
+}
+
+.button {
+    background-color: #1e2f92;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #6c7bff;
+}
+
+.terms-content {
+    display: none;
+    margin-top: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #2D3A3F;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+footer a {
+    color: #6c7bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* Scrollbar behavior */
+body {
+    overflow-y: auto; /* This will ensure scroll bar appears if content overflows */
+}
+
+/* Optional: Customize the scrollbar appearance */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.search-bar {
+    margin: 20px auto;
+    max-width: 800px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    position: relative; /* Ensure it is positioned correctly */
+    z-index: 999; /* Ensure it's above other elements */
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white; /* Ensure visibility */
+}
+
+.feedback-form {
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.feedback-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #1e2f92;
+}
+
+.feedback-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.feedback-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #1e2f92;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.feedback-form button:hover {
+    background: #6c7bff;
+}

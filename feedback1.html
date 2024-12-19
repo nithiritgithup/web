@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>Terms and Conditions</h1>
+            <p class="subheading">Please read the terms and conditions carefully before using our service.</p>
+        </div>
+    </header>
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search terms..." onkeyup="searchTerms()">
+    </div>
+
+    <div class="container" id="termsContainer">
+        <div class="card">
+            <div class="card-header">General Terms</div>
+            <div class="card-body">
+                <button class="button" onclick="toggleContent('general', this)">Read More</button>
+                <div id="general" class="terms-content">
+                    <ul>
+                        <li>Users must provide valid information during registration. Unauthorized use of accounts is strictly prohibited.</li>
+                        <li>You agree that the information provided by you is accurate and correct and you shall update it if necessary.</li>
+                        <li>For security, logout at the end of each session.</li>
+                        <li>Account Security: Notify us of any unauthorized use of your account.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Privacy Policy</div>
+            <div class="card-body">
+                <button class="button" onclick="toggleContent('privacy', this)">Read More</button>
+                <div id="privacy" class="terms-content">
+                    <ul>
+                        <li>DesiCrew provides services only and does not offer or sell any physical or digital products.</li>
+                        <li>All transactions are service-oriented and not for product sales.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Refund Policy</div>
+            <div class="card-body">
+                <button class="button" onclick="toggleContent('refund', this)">Read More</button>
+                <div id="refund" class="terms-content">
+                    <ul>
+                        <li>DesiCrew reserves the right to modify or update our Cancellation and Refund Policy at any time.</li>
+                        <li>Cancellation requests must be submitted within a specific period for refunds.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="feedback-form">
+        <h2>Feedback Form</h2>
+        <form id="feedbackForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" aria-label="Your Name" required>
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" aria-label="Your Email" required>
+            <label for="feedback">Your Feedback</label>
+            <textarea id="feedback" name="feedback" rows="5" aria-label="Your Feedback" required></textarea>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 DesiCrew. All rights reserved.</p>
+    </footer>
+
+    <!-- Include EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
