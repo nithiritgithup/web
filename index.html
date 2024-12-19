@@ -20,6 +20,7 @@
     </div>
 
     <div class="container" id="termsContainer">
+        <!-- General Terms -->
         <div class="card">
             <div class="card-header">General Terms</div>
             <div class="card-body">
@@ -34,33 +35,153 @@
                 </div>
             </div>
         </div>
-
+    
+        <!-- Conditions to Use Website -->
         <div class="card">
-            <div class="card-header">Privacy Policy</div>
+            <div class="card-header">Conditions to Use Website</div>
             <div class="card-body">
-                <button class="button" onclick="toggleContent('privacy', this)">Read More</button>
-                <div id="privacy" class="terms-content">
+                <button class="button" onclick="toggleContent('conditions', this)">Read More</button>
+                <div id="conditions" class="terms-content">
                     <ul>
-                        <li>DesiCrew provides services only and does not offer or sell any physical or digital products.</li>
-                        <li>All transactions are service-oriented and not for product sales.</li>
+                        <li>Users must create accounts with accurate information and update them as necessary.</li>
+                        <li>Users are responsible for maintaining the confidentiality of their account information.</li>
+                        <li>Users may receive updates and promotional emails.</li>
+                        <li>Feedback provided is deemed non-confidential.</li>
                     </ul>
                 </div>
             </div>
         </div>
-
+    
+        <!-- No Product Selling Policy -->
         <div class="card">
-            <div class="card-header">Refund Policy</div>
+            <div class="card-header">No Product Selling Policy</div>
             <div class="card-body">
-                <button class="button" onclick="toggleContent('refund', this)">Read More</button>
-                <div id="refund" class="terms-content">
+                <button class="button" onclick="toggleContent('sellingPolicy', this)">Read More</button>
+                <div id="sellingPolicy" class="terms-content">
                     <ul>
-                        <li>DesiCrew reserves the right to modify or update our Cancellation and Refund Policy at any time.</li>
-                        <li>Cancellation requests must be submitted within a specific period for refunds.</li>
+                        <li>DesiCrew provides services, not physical or digital products.</li>
+                        <li>Service fees vary and include applicable taxes.</li>
+                        <li>Refunds are not applicable once services are provided.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Permissible Use -->
+        <div class="card">
+            <div class="card-header">Permissible Use</div>
+            <div class="card-body">
+                <button class="button" onclick="toggleContent('permissibleUse', this)">Read More</button>
+                <div id="permissibleUse" class="terms-content">
+                    <ul>
+                        <li>Prohibited activities include hacking, soliciting unlawful acts, and harassing others.</li>
+                        <li>Uploading malicious code or viruses is strictly forbidden.</li>
+                        <li>Violations may lead to termination of site access.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Intellectual Property -->
+        <div class="card">
+            <div class="card-header">Intellectual Property</div>
+            <div class="card-body">
+                <button class="button" onclick="toggleContent('intellectualProperty', this)">Read More</button>
+                <div id="intellectualProperty" class="terms-content">
+                    <ul>
+                        <li>Trademarks and materials on the site are DesiCrew’s property.</li>
+                        <li>Users cannot reproduce or use trademarks without authorization.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Site Materials -->
+        <div class="card">
+            <div class="card-header">Site Materials</div>
+            <div class="card-body">
+                <button class="button" onclick="toggleContent('siteMaterials', this)">Read More</button>
+                <div id="siteMaterials" class="terms-content">
+                    <ul>
+                        <li>Materials on the site are protected by copyright, trademark, and patent laws.</li>
+                        <li>Users cannot exploit, reproduce, or transfer site materials without prior authorization.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <!-- No Endorsement of Third-Party Sites -->
+        <div class="card">
+            <div class="card-header">No Endorsement of Third-Party Sites</div>
+            <div class="card-body">
+                <button class="button" onclick="toggleContent('thirdPartySites', this)">Read More</button>
+                <div id="thirdPartySites" class="terms-content">
+                    <ul>
+                        <li>DesiCrew is not responsible for content or services on third-party websites.</li>
+                        <li>Users assume responsibility for linking to third-party sites.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Disclaimer of Warranties -->
+        <div class="card">
+            <div class="card-header">Disclaimer of Warranties</div>
+            <div class="card-body">
+                <button class="button" onclick="toggleContent('warranties', this)">Read More</button>
+                <div id="warranties" class="terms-content">
+                    <ul>
+                        <li>Services are provided "as is" without warranties.</li>
+                        <li>DesiCrew does not guarantee uninterrupted or error-free services.</li>
+                        <li>Errors and omissions may be corrected at DesiCrew’s discretion.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Use of Cookies and Tracking Technology -->
+        <div class="card">
+            <div class="card-header">Use of Cookies and Tracking Technology</div>
+            <div class="card-body">
+                <button class="button" onclick="toggleContent('cookies', this)">Read More</button>
+                <div id="cookies" class="terms-content">
+                    <ul>
+                        <li>DesiCrew uses tracking technologies like cookies, GIFs, and IP tracking.</li>
+                        <li>Users consent to the use of tracking technologies for legal purposes.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Limitation of Liability -->
+        <div class="card">
+            <div class="card-header">Limitation of Liability</div>
+            <div class="card-body">
+                <button class="button" onclick="toggleContent('liability', this)">Read More</button>
+                <div id="liability" class="terms-content">
+                    <ul>
+                        <li>DesiCrew is not liable for damages from site usage or information obtained through the site.</li>
+                        <li>Includes damages from errors, viruses, unauthorized access, and offensive user activities.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Indemnification -->
+        <div class="card">
+            <div class="card-header">Indemnification</div>
+            <div class="card-body">
+                <button class="button" onclick="toggleContent('indemnification', this)">Read More</button>
+                <div id="indemnification" class="terms-content">
+                    <ul>
+                        <li>Users agree to indemnify DesiCrew for any losses or claims from breaches of terms.</li>
+                        <li>DesiCrew reserves the right to assume exclusive defense in related matters.</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
+    
     <div class="feedback-form">
         <h2>Feedback Form</h2>
         <form id="feedbackForm">
